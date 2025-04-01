@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ca-ES">
+  <head>
+    <meta charset="utf-8">
+    <title>Cuines del món</title>
+    <meta name="description" content="Home - Cuines del món">
+    <link rel="icon" type="image/x-icon" href="./img/logotip.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <include src="src/header.html"></include>
+    <main id="detalls">
+        <div class="container">
+            <h1>Detalls</h1>
+            <h2>index.html</h2>
+            <p>Es tracta de la portada de la pàgina web.</p>
+            <ul>
+                <li>Trobem enllaços a les altres pàgines, tant al header, com al footer.</li>
+                <li>Header i footer fan ús del post-processador html posthtml-include que veurem més avant.</li>
+                <li>També es destaca la recepta del més, amb un enllaç a recepta.html.</li>
+                <li>A la part inferior del body es mostren 6 receptes, com si fóssin les últimes 6 receptes publicades.</li>
+                <li>S’ha utilitzat flexbox per tal que sigui responsive.</li>
+                <li>Aquest component fa ús del post-processador html posthtml-include que veurem més avant.</li>
+            </ul>
+
+            <h2>recepta.html</h2>
+            <p>Com a exemple de com seria la pàgina web d’una recepta.</p>
+            <ul>
+                <li>Tots els enllaços de “Veure recepta” de les altres receptes, realment porten fins a aquesta.</li>
+                <li>Es tractaria de la pàgina de detall, que conté:</li>
+                <ul>
+                    <li>Una imatge destacada</li>
+                    <li>Diversos paràgrafs de text</li>
+                    <li>Diverses imatges</li>
+                    <li>Un vídeo (insertat de youtube amb iframe)</li>
+                </ul>
+                <li>En aquesta pàgina s’explica amb detall tota la recepta.</li>
+            </ul>
+
+            <h2>totes-receptes.html</h2>
+            <p>Es tractaria de la pàgina de “categoria”, que ofereix un llistat d’elements relacionats amb la temàtica.</p>
+            <ul>
+                <li>Es mostren 12 elements, receptes amb el seu enllaç a recepta.html i amb una imatge principal.</li>
+                <li>Aquest component fa ús del post-processador html posthtml-include que veurem més avant.</li>
+            </ul>
+
+            <h2>enllacos.html</h2>
+            <p>Pàgina amb la documentació i enllaços a les fonts de les quals s’ha tret el contingut.</p>
+            <ul>
+                <li>Atribucions als drets copyleft necessaris.</li>
+            </ul>
+
+            <h2>detalls.html</h2>
+            <p>Pàgina explicant l’estructura del web.</p>
+        </div>
+    </main>
+    <include src="src/footer.html"></include>
+  </body>
+</html>

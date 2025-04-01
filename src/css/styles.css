@@ -1,0 +1,344 @@
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
+
+abbr:hover{
+  cursor: help;
+}
+
+h3>a{
+  border: none;
+}
+
+header{
+  text-align: center;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+header>nav>ul{
+  list-style-type: none;
+  padding-left: 0;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+header>nav>ul>li{
+  padding: 0.25em;
+}
+
+header a{
+  text-decoration: none;
+  border-bottom: none;
+  color: rgb(0,0,0);
+}
+
+header a:hover, footer a:hover{
+  color: rgb(64, 195, 130);
+}
+
+main{
+  background-color: rgb(242, 242, 230);
+  padding: 1em;
+  text-align: center;
+}
+
+section{
+  margin-top: 4em;
+}
+
+#mes>div{
+  display: flex;
+  padding: 1em;
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+#mes>div>img{
+  width: 100%;
+  height: 10em;
+  object-fit: cover;
+}
+
+#mes>div>p{
+  font-size: 1.2em;
+  font-weight: bold;
+  align-self: center;
+}
+
+#mes>div>p:first-of-type{
+  text-align: left;
+}
+
+#mes>div>p:last-of-type{
+  text-align: right;
+}
+
+#totes>div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#totes img{
+  width: 20em;
+}
+
+#totes>div>div{
+  width: 20em;
+  background-color: white;
+  margin: 1em;
+  padding: 0em 1em;
+  text-align: left;
+}
+
+#totes>div>div>p:last-of-type{
+  display: inline-flex;
+}
+
+#totes>div>div>p:first-of-type{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#totes a, #mes a{
+  background-color: green;
+  color: white;
+  padding: 0.5em 1em;
+}
+
+#totes>p{
+  font-size: 1.2em;
+  margin: 3em;
+}
+
+#recepta h1{
+  font-size: 2em;
+}
+
+article{
+  text-align: left;
+  font-size: 1.1em;
+}
+
+article img{
+  width: 100%;
+}
+
+article li+img{
+  width: 95%;
+}
+
+article li{
+  padding: 0.5em;
+}
+
+iframe{
+  width: 100%;
+  height: 20em;
+}
+
+button{
+  background: green;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1.1em;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+#comptador, #passos {
+  font-size: 1.2em;
+  margin: 1em;
+  font-weight: bold;
+}
+
+#detalls{
+  text-align: left;
+  line-height: 2em;
+  padding: 2em;
+  font-size: 1.1em;
+}
+
+#detalls h2{
+  margin-top: 2em;
+}
+
+#detalls a{
+  text-decoration: underline;
+  color: darkgreen;
+}
+
+footer{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  padding: 1em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  line-height: 2em;
+}
+
+footer a{
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+footer>div>div:last-of-type{
+  align-content: center;
+}
+
+footer>div>div:first-of-type>img{
+  margin-bottom: 1em;
+}
+
+footer>div>div:last-of-type>p{
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+
+footer>div>div:last-of-type>p>a>i:hover{
+  opacity: 0.7;
+}
+
+footer>div>div:last-of-type>p>a>i{
+  font-size: 1.2em;
+  padding: 0.2em;
+}
+
+@media (min-width: 960px) {
+
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  header{
+    display: flex;
+  }
+
+  header>a{
+    margin-right: auto;
+  }
+
+  header>nav>ul{
+    display: flex;
+    margin-top: 0.5em;
+  }
+
+  header>nav>ul>li{
+    position: relative;
+  }
+
+  header>nav>ul>li:not(:last-child){
+    padding-right: 1em;
+  }
+
+  header>nav>ul>li:last-child{
+    padding-left: 1em;
+  }
+
+  header>nav>ul>li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 1em;
+    width: 1px;
+    background-color: rgb(0, 0, 0);
+  }
+
+  section>h3{
+    text-align: left;
+  }
+
+  #mes>div{
+    width: 90%;
+    flex-direction: row;
+  }
+
+  #mes>div>img{
+    width: 50%;
+  }
+
+  #mes>div>p{
+    padding: 1em;
+    width: 25%;
+  }
+
+  article img{
+    height: 20em;
+    object-fit: cover;
+  }
+
+  iframe{
+    height: 30em;
+  }
+
+  footer>div{
+    display: flex;
+  }
+
+  footer>div>div:first-of-type{
+    margin-right: auto;
+    text-align: left;
+  }
+
+  footer>div>div:last-of-type{
+    text-align: right;
+  }
+
+  footer>div>div:last-of-type>p{
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  footer>div>div:last-of-type>ul{
+    display: flex;
+    line-height: initial;
+  }
+  
+  footer>div>div:last-of-type>ul>li{
+    position: relative;
+  }
+
+  footer>div>div:last-of-type>ul>li:not(:last-child){
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  footer>div>div:last-of-type>ul>li:last-child{
+    padding-left: 1em;
+  }
+
+  footer>div>div:last-of-type>ul>li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 1em;
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  footer>div>div:first-of-type>img {
+    margin-bottom: 0;
+  }
+}

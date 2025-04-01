@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ca-ES">
+  <head>
+    <meta charset="utf-8">
+    <title>Cuines del món</title>
+    <meta name="description" content="Home - Cuines del món">
+    <link rel="icon" type="image/x-icon" href="./img/logotip.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <include src="src/header.html"></include>
+    <main id="recepta">
+      <article class="container">
+            <section>
+                <h1>OKONOMIYAKI</h1>
+                <img src="./img/okonomiyaki.jpg" alt="Plat d'Okonomiyaki (japonés)">
+                <h2>Si parlem de cuina japonesa, ens venen al cap el sushi o el ramen, però hui cuinarem okonomiyaki, un dels seus plats més curiosos, semblant a una truita, i que s’està fent molt popular també.</h2>
+            </section>
+            <section>
+                <h3>Ingredients</h3>
+                <p>A continuació, us comparteixo la llista d'ingredients necessaris per preparar aquesta recepta amb èxit. Assegureu-vos de tenir-los tots a mà abans de començar!</p>
+                <ul>
+                    <li>2 calamars</li>
+                    <li>1/2 col blanca</li>
+                    <li>1 creïlla</li>
+                    <li>2 ous</li>
+                    <li>150 g de farina per a ‘okonomiyaki’</li>
+                    <li>125 ml de caldo de peix</li>
+                    <li>Bacó en tires</li>
+                    <li>Salsa 'otafuku'</li>
+                    <li>Alga nori torssejada</li>
+                    <li>Maionesa japonesa</li>
+                    <li>Flocs de bonítol sec</li>
+                    <li>Gingebre envinagrat</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Elaboració</h3>
+                <p>Un cop tenim tots els ingredients a punt, és moment de començar amb la preparació. Seguiu aquests passos amb cura per obtenir el millor resultat!</p>
+                <ol>
+                    <li>Posem a remulla la col tallada ben fineta.</li>
+                    <li>En una paella, fregim el bacó fins que quede cruixent.</li>
+                    <img src="./img/baco.png" alt="Bacó fregint-se a la paella">
+                    <li>En un bol, batem els ous amb el caldo de peix i la farina.</li>
+                    <li>Ho removem bé fins a obtindre’n una textura homogènia.</li>
+                    <li>Hi afegim la creïlla ratllada, el calamar a tires, el bacó i la col escorreguda, i ho integrem tot.</li>
+                    <img src="./img/tot.png" alt="Tots els ingredients integrats">
+                    <li>Ho aboquem a una paella, amb un raig d’oli, i ho quallem per les dos cares, pegant-li la volta com a una truita.</li>
+                    <li>Ho servim adobat amb la maionesa japonesa i la salsa “otafuku”.</li>
+                    <li>Ho acabem amb el gingebre, els flocs de bonítol sec i l’alga nori.</li>
+                    <img src="./img/final.png" alt="Plat d'okonomiyaki">
+                </ol>
+            </section>
+            <section>
+                <h3>Vídeo del procés d'elaboració</h3>
+                <p>Si ho preferiu, podeu seguir la recepta pas a pas amb el vídeo explicatiu. Així us serà encara més fàcil de preparar!</p>
+                <iframe src="https://www.youtube.com/embed/m2cJ2OZZAHc?si=61wTHml7Le8RQyNR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            <section>
+                <h3>Bon profit!</h3>
+                <p>Ja hem arribat al final de la recepta! Esperem que hagueu gaudit preparant aquest deliciós okonomiyaki, un plat tradicional japonès ple de sabor i textura. Bon profit i fins a la pròxima recepta!</p>
+            </section>
+      </article>
+      <div>
+        <p><button id="comencar">Començar a cuinar!</button></p>
+        <div id="comptador">Comptador: 00:00</div>
+        <div id="passos">Pas: 0</div>
+        <button id="seguentPas">Seguent pas</button>
+      </div>
+      </div>
+    </main>
+    <include src="src/footer.html"></include>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
