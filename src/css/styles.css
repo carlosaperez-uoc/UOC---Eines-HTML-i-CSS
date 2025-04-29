@@ -1,5 +1,47 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 
+@keyframes rebotar {
+  0%   { transform: scale(1);}
+  25%  { transform: scale(1.1) rotate(5deg);}
+  50%  { transform: scale(1);}
+  75%  { transform: scale(1.1) rotate(-5deg);}
+  100% { transform: scale(1);}
+}
+
+.animada {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  animation: rebotar 6s ease-in-out infinite;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.animada-receptes {
+  transition: transform 0.5s ease;
+}
+
+.animada-receptes:hover {
+  transform: scale(1.05);
+  cursor:pointer;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotar{
+  display:block;
+  margin:auto;
+  animation: girar 6s linear infinite;
+}
+
 body{
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -64,7 +106,7 @@ section{
   flex-direction: column;
 }
 
-#mes>div>img{
+#mes>div>picture>img{
   width: 100%;
   height: 10em;
   object-fit: cover;
@@ -90,7 +132,7 @@ section{
   justify-content: center;
 }
 
-#totes img{
+#totes picture>img{
   width: 20em;
 }
 
@@ -131,11 +173,11 @@ article{
   font-size: 1.1em;
 }
 
-article img{
+article picture>img{
   width: 100%;
 }
 
-article li+img{
+article li+picture>img{
   width: 95%;
 }
 
@@ -207,7 +249,7 @@ footer>div>div:last-of-type{
   align-content: center;
 }
 
-footer>div>div:first-of-type>img{
+footer>div>div:first-of-type>picture>img{
   margin-bottom: 1em;
 }
 
@@ -275,7 +317,7 @@ footer>div>div:last-of-type>p>a>i{
     flex-direction: row;
   }
 
-  #mes>div>img{
+  #mes>div>picture{
     width: 50%;
   }
 
@@ -284,7 +326,7 @@ footer>div>div:last-of-type>p>a>i{
     width: 25%;
   }
 
-  article img{
+  article picture>img{
     height: 20em;
     object-fit: cover;
   }
@@ -338,7 +380,7 @@ footer>div>div:last-of-type>p>a>i{
     background-color: rgb(255, 255, 255);
   }
 
-  footer>div>div:first-of-type>img {
+  footer>div>div:first-of-type>picture>img {
     margin-bottom: 0;
   }
 }

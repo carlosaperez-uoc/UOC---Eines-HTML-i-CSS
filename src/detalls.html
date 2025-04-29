@@ -24,6 +24,21 @@
                 <li>Aquest component fa ús del post-processador html posthtml-include que veurem més avant.</li>
             </ul>
 
+            <h3>SVG i clip-path</h3>
+            <p>Per al clip-path, he aprofitat la imatge de la recepta destacada. A banda de l’animació que ja tenia, li he donat una forma de fletxa. Per aconseguir les mesures de la forma, m’he fet servir d’aquesta ferramenta: <a href="https://bennettfeely.com/clippy/">Clippy (Bennettfeely)</a>:</p>
+            <picture>
+                <source srcset="./img/okonomiyaki.jpg?as=avif&width=400" type="image/avif" media="(max-width: 600px)">
+                <source srcset="./img/okonomiyaki.jpg?as=avif&width=800" type="image/avif" media="(min-width: 601px)">
+                <source srcset="./img/okonomiyaki.jpg?as=webp&width=400" type="image/webp" media="(max-width: 600px)">
+                <source srcset="./img/okonomiyaki.jpg?as=webp&width=800" type="image/webp" media="(min-width: 601px)">
+                <img class="animada" src="./img/okonomiyaki.jpg" alt="Plat d'Okonomiyaki (japonés)">
+            </picture>
+            <p><b>SVG: </b>S'ha utilitzat <a href="https://www.svgviewer.dev/s/473872/food">aquesta hamburguesa</a></p>
+            <svg class="rotar" width="80" viewBox="0 0 16 16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" fill-rule="evenodd" d="M1.08296,6 C1.05626,6.15914 1.03582,6.32041 1.02192,6.48354 C0.402244,6.93853 0,7.67229 0,8.5 C0,9.31791 0.392777,10.0441 1,10.5002 L1,12 C1,13.6569 2.34315,15 4,15 L12,15 C13.6569,15 15,13.6569 15,12 L15,10.5002 C15.6072,10.0441 16,9.31791 16,8.5 C16,7.67229 15.5978,6.93853 14.9781,6.48354 C14.9642,6.32041 14.9437,6.15914 14.917,6 C14.441,3.16229 11.973,1 9,1 L7,1 C4.027,1 1.55904,3.16229 1.08296,6 Z M12.874,6 L3.12602,6 C3.57006,4.27477 5.13616,3 7,3 L9,3 C10.8638,3 12.4299,4.27477 12.874,6 Z M2,8.5 C2,8.22386 2.22386,8 2.5,8 L13.5,8 C13.7761,8 14,8.22386 14,8.5 C14,8.77614 13.7761,9 13.5,9 L2.5,9 C2.22386,9 2,8.77614 2,8.5 Z M3,11 L3,12 C3,12.5523 3.44772,13 4,13 L12,13 C12.5523,13 13,12.5523 13,12 L13,11 L11,11 L10,12 L9,11 L3,11 Z"/>
+            </svg>
+            <p>Les dues animacions estàn animades amb @keyframes de CSS</p>
+
             <h2>recepta.html</h2>
             <p>Com a exemple de com seria la pàgina web d’una recepta.</p>
             <ul>
