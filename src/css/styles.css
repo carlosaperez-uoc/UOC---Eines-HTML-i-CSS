@@ -21,12 +21,12 @@
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
 }
 
-.animada-receptes {
+/*.animada-receptes {
   transition: transform 0.5s ease;
-}
+}*/
 
 .animada-receptes:hover {
-  transform: scale(1.05);
+  /*transform: scale(1.05);*/
   cursor:pointer;
 }
 
