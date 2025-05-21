@@ -227,6 +227,14 @@ button:hover{
   color: darkgreen;
 }
 
+#video_youtube{
+  cursor: pointer;
+}
+
+#video_youtube>img{
+  width: 100%;
+}
+
 footer{
   color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
