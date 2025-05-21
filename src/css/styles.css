@@ -15,7 +15,7 @@
   margin-inline: auto;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
   animation: rebotar 6s ease-in-out infinite;
-  animation-delay: 2s;
+  animation-delay: 5s;
   will-change: transform, clip-path;
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
